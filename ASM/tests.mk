@@ -14,7 +14,7 @@ test-sully:
 	for i in {0..4}; do
 		diff Sully_$$i.s Sully.s > Sully.diff
 		diff Sully.diff -<<-EOF
-		53c53
+		54c54
 		< i: dd $$i
 		$$threedashes
 		> i: dd 5
